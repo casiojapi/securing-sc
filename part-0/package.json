@@ -1,4 +1,11 @@
 {
+  "name": "blockchain-dev-course-bguiz-lab-example",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "coverage": "hardhat coverage"
+  },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "2.0.5",
     "@nomiclabs/hardhat-waffle": "2.0.3",
