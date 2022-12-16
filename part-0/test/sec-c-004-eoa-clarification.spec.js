@@ -17,5 +17,4 @@ describe('Security Audit C-004 EOA clarification', () => {
     // __________
     // __________
   });
-
 });

@@ -8,15 +8,14 @@ interface ISuperHonk {
 }
 
 contract SuperHonk is ISuperHonk {
-    uint256 public count; // HINT: Modify this
+  uint256 public count; // HINT: Modify this
 
-    event LoudSound(address indexed source);
+  event LoudSound(address indexed source);
 
-    function honk()
-      public
-    { // HINT: Modify this
-        require(tx.origin != msg.sender, "EOA only");  // HINT: Modify this
-        count += 1;
-        emit LoudSound(tx.origin);
-    }
+  function honk() public {
+    // HINT: Modify this
+    require(tx.origin != msg.sender, 'EOA only'); // HINT: Modify this
+    count += 1;
+    emit LoudSound(tx.origin);
+  }
 }
