@@ -6,7 +6,8 @@
     "test": "hardhat test",
     "lint": "npx prettier --list-different 'contracts/**/*.sol' 'test/**/*.js'",
     "lint-fix": "npx prettier --write 'contracts/**/*.sol' 'test/**/*.js'",
-    "coverage": "hardhat coverage"
+    "coverage": "hardhat coverage",
+    "sc-analysis-static": "slither ."
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "2.0.5",
